@@ -3,42 +3,48 @@
 ---
 
 <div id="container">
-	<main>
-		<section id="hero">
-			<h1>Search Engine Dorking</h1>
-			<label for="domain">Enter Target Domain:</label>
-			<input
-				id="domainInput"
-				type="text"
-				placeholder="example.com"
-				value="example.com"
-			/>
-		</section>
-		<section>
-			<h3>Search Engine Dorking:</h3>
-			<ul>
-				<li>
-					Subdomains - <code id="subdomains">site:*.example.com</code>
-				</li>
-				<li>
-					Indexed Pages - <code id="indexed">site:example.com</code>
-				</li>
-				<li>
-					Exposed Files - <code id="files"
-						>site:example.com ext:pdf OR ext:doc</code
-					>
-				</li>
-				<li>
-					Login Pages - <code id="login"
-						>inurl:login site:example.com</code
-					>
-				</li>
-				<li>
-					Open Directories - <code id="directories"
-						>intitle:"index of /" site:example.com</code
-					>
-				</li>
-			</ul>
-		</section>
-	</main>
+  <main>
+    <section id="hero">
+      <h1>Search Engine Dorking</h1>
+      <label for="domain">Enter Target Domain:</label>
+      <input
+        id="domainInput"
+        type="text"
+        placeholder="example.com"
+        value="example.com"
+      />
+    </section>
+
+    <section>
+      <h3>Search Engine Dorking:</h3>
+      <!-- Placeholder for dynamic buttons -->
+      <div id="dorkButtons"></div>
+    </section>
+  </main>
 </div>
+
+<!-- Link the script -->
+<script src="/src/scripts/google_queries.js" type="module"></script>
+
+<style>
+  #dorkButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .dork-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .dork-btn:hover {
+    background-color: #0056b3;
+  }
+</style>

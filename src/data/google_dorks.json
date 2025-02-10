@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Find Subdomains",
+        "query": "site:*.example.com"
+    },
+    {
+        "name": "Indexed Pages",
+        "query": "site:example.com"
+    },
+    {
+        "name": "Exposed Files",
+        "query": "site:example.com ext:pdf OR ext:doc"
+    },
+    {
+        "name": "Login Pages",
+        "query": "inurl:login site:example.com"
+    },
+    {
+        "name": "Open Directories",
+        "query": "intitle:\"index of /\" site:example.com"
+    }
+]
