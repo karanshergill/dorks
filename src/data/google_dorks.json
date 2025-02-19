@@ -1,6 +1,6 @@
 [
     {
-        "name": "Find Subdomains",
+        "name": "Subdomains",
         "query": "site:*.example.com"
     },
     {
